@@ -1,0 +1,39 @@
+{
+  "name": "bpc-reader",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "bpc-reader": "src/managed-cli.mjs",
+    "bpc-reader-mcp": "src/mcp-cli.mjs"
+  },
+  "description": "Agent-callable article search and reading with managed Chromium, bundled BPC, CLI and MCP",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "scripts": {
+    "setup": "node scripts/install-browser.mjs",
+    "verify": "node scripts/check-install.mjs",
+    "reader": "node src/managed-cli.mjs",
+    "mcp": "node src/mcp-cli.mjs",
+    "mcp-config": "node scripts/mcp-config.mjs",
+    "mcp-smoke": "node scripts/mcp-smoke.mjs",
+    "mvp-smoke": "node scripts/mvp-smoke.mjs",
+    "publisher-smoke": "node scripts/publisher-smoke.mjs",
+    "bpc-update": "node scripts/update-bpc.mjs",
+    "lease-smoke": "node scripts/lease-smoke.mjs",
+    "distribution-check": "node scripts/distribution-check.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.3.1",
+    "@mozilla/readability": "0.6.0",
+    "jsdom": "30.1.2",
+    "playwright": "1.64.0",
+    "turndown": "7.2.4",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.3.1"
+  },
+  "license": "MIT"
+}

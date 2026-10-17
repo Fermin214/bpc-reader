@@ -1,0 +1,21 @@
+# Dependencies and local runtime data
+/node_modules/
+/.cache/
+/output/
+/.local-history/
+
+# Local agent state
+/.codex/
+/.agents/
+/.memorix/
+
+# Local credentials, packages, logs, and operating-system files
+*.log
+*.tgz
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db

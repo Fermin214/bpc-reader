@@ -1,0 +1,10 @@
+{
+  "version": "4.4.7.4",
+  "manifest_version": 3,
+  "files": 58,
+  "sha256": "add337a51278dec6ead1fa306c742d8b927099f3cfc8f1a45b5616ea5279ee27",
+  "source": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-chrome-clean",
+  "provenance": "local source snapshot; staged compatibility validation",
+  "hash_format": "sorted POSIX relative path plus newline then raw file bytes",
+  "license": "MIT"
+}

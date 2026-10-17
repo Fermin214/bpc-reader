@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# The runtime checksum covers raw vendored bytes, including original line endings.
+vendor/bpc/** -text
